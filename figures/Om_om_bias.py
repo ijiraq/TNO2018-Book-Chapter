@@ -24,9 +24,10 @@ data['q'] = data['a'] * ( 1 - data['e'])
 
 
 cond = data['a'] > 150
-pyplot.plot(data['Om'][cond][:6], data['om'][cond][:6], 'o', ms=5, alpha=0.5)
-pyplot.plot(data['Om'][cond][6:12], data['om'][cond][6:12], 'o', ms=5, alpha=0.5)
-pyplot.plot(data['Om'][cond][12:], data['om'][cond][12:], 'o', ms=5, alpha=0.5)
+pyplot.plot(data['Om'][cond][:1], data['om'][cond][:1], 'ro', ms=5, alpha=0.5)
+pyplot.plot(data['Om'][cond][:7], data['om'][cond][:7], 'bo', ms=5, alpha=0.5)
+pyplot.plot(data['Om'][cond][7:13], data['om'][cond][7:13], 'o', ms=5, alpha=0.5)
+pyplot.plot(data['Om'][cond][13:], data['om'][cond][13:], 'go', ms=5, alpha=0.5)
 pyplot.xlabel('Node Angle (deg)')
 pyplot.ylabel('Argument of pericentre (deg)')
 pyplot.xlim(0, 360)
