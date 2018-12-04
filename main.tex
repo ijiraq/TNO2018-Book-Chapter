@@ -1,10 +1,7 @@
 \documentclass[preprint]{aastex62}
 
-%% Tells LaTeX to search for image files in the 
-%% current directory as well as in the figures/ folder.
 \graphicspath{{./}{figures/}}
 
-%% Reintroduced the \received and \accepted commands from AASTeX v5.2
 \received{October 18, 2018}
 % \revised{---}
 % \accepted{---}
@@ -36,7 +33,6 @@
 
 \begin{abstract}
 
-%\section{Introduction}
 
 Looking at the orbits of small bodies with large semimajor axes, we are compelled to see
 patterns. 
@@ -71,7 +67,6 @@ These numbers are in basic agreement with more careful computation provided else
 An important consideration is that to use the biases in Figure~1 to aid in understanding the structure of the trans-Neptunian region, we need to know the full range of orbits, including those with $a< 200$ and $q<40$, that were detected in a given survey. We can then use the relative sensitivity to scale between the regions. 
 
 \begin{figure*}
-%\centering
 \includegraphics[width=\textwidth]{figures/figure1.pdf}
 \caption{Orbital distribution of known TNOs with observed arcs longer than 10 months in the MPC Database as of October 2018, on orbits with $a > 150$~au and $q > 30$~au in $a$-$q$ (blue dots); a few extremes are noted by name. 
 The background grid of colored boxes indicates the population of TNOs needed in each ($a$, $q$) orbit group for detection of that orbit to have similar probability to an orbit with $a = 150$, $q = 30$; see text for details.
@@ -91,7 +86,7 @@ This may indicate that this zone is, indeed, relatively under-populated, an impo
 
 In recent literature, there has been much discussion of the handful of known large-$a$, high-$q$ so-called ``extreme TNOs,'' which are defined with a variety of orbital selection criteria,\footnote{We note that definitions that make use of orbital elements for such orbits must use the barycentric not the heliocentric orbit, due to the long-term effect of Jupiter on these distant orbits.
 However, heliocentric orbital elements are what is provided by the most frequently used databases of orbits, the Minor Planet Center Database and JPL Horizons. Uncertainties in the orbit fit to the measured TNO astrometry should also be considered.}  sometimes as having orbits with $a>250$~au (alternatively sometimes $a>150$~au) and perihelia detached from active interaction with Neptune of $q\gtrsim37$~au \citep[e.g.][]{Kiss13,Sheppardetal2016,dlfmdlfm16c,shankman17bias,bannister17,becker18}.
-This definition is vague, reflecting the current lack of understanding of the population, and may not necessarily be dynamically distinguishing. %; we discuss it further below.
+This definition is vague, reflecting the current lack of understanding of the population, and may not necessarily be dynamically distinguishing. 
 To date, 17 TNOs with multi-opposition orbits reported in the Minor Planet Center database have $150<a<1000$~au with $q>37$~au, mostly with pericentres in the range $37<q<50$~au.
 Two of these TNOs have much larger pericentre distances, with $q>75$~au: Sedna ($q=76.19 \pm 0.03$~au, $a=507 \pm 10$~au; \citealt{brownetal04}) and 2012~VP$_{113}$ ($q=80.3^{+1.2}_{-1.6}$~au, $a = 266^{+26}_{-17}$~au; \citealt{trujillosheppard14})\footnote{Barycentric orbits after \citet{bannister17}.}. 
 
@@ -109,7 +104,6 @@ Certain geometries of stellar flyby may permit capture of TNOs from passing star
 All these simulations have many degrees of freedom related to the stellar mass, and the distance and geometry of a flyby, which require an abundance of known high-$q$ TNOs to well confine their possible parameter space.
 
 An intriguing new theoretical mechanism is being explored by simulations that take into account the self-gravitational influence of great densities of small TNOs. \citet{madigan2016} have shown an ``inclination instability'' within a massive planetesimal disk can produce high-$q$ orbits. A disk that begins as axisymmetric eccentric orbits like that of the scattering disk will increase in inclination while lowering its orbital eccentricities, forming an asymmetric cone \citep{Madigan:2018}.
-%; this effect may cause the most massive TNOs to move to the highest pericentres \citep{Fleisigetal2018}.
 The inclination instability effect requires substantial mass in planetesimals in the distant Solar System for it to initiate; \citet{Madigan:2018} infer about half an Earth
 mass at hundreds of au.  
 Bounds on the size distribution of distant TNOs and thus the mass at large $a$ yet remain limited, but will constrain this theory tightly in the future.
@@ -132,7 +126,7 @@ However, other aspects of the observed Kuiper Belt are solidly inconsistent with
 Simulations that include one or more ``rogue planets'', with masses similar to Mars or Earth that are ejected after orbiting in the Kuiper Belt region for a few hundred million years, are also very successful at lifting pericentres for large-$a$ TNOs \citep{gladmanchan06,silsbee18}.
 
 \begin{figure*}
-%\centering
+
 \includegraphics[width=\textwidth]{figures/rogue_aq.pdf}
 \caption{Orbital distribution of simulated TNOs resulting from the rogue planet simulation in \citet{gladmanchan06}, cloned and integrated for an additional Gyr (small black points), and simulated TNOs resulting from an emplacement simulation of \citet{lawler2017} including an eccentric distant giant planet (green squares).
 As in Figure~\ref{fig:bias}, large blue dots show real TNOs and the red hatched box indicates the region of ($a$, $q$) orbits yet without real TNO detections.
@@ -329,11 +323,11 @@ The lack of TNO detections inside the red box in Figures~\ref{fig:bias} and \ref
 In most physical situations, multiple effects are in play at any given point in time. 
 Perhaps we should be cautious of requiring reduction to a single mechanism to produce all the complexity of the distant TNO populations across the Solar System's history.
 
-%\subsection{The orbits of Sedna and 2012 VP$_{113}$ remain puzzling}
+
 
 \acknowledgements{The authors thank Brett Gladman (UBC) for useful discussions during the preparation of this manuscript.}
 
-% \bibliographystyle{apj}
+
 \bibliography{citations}
 
 
