@@ -12,6 +12,7 @@ def plot_data():
 
     data['q'] = data['a'] * ( 1 - data['e'])
     cond = data['a'] > 150
+    print(data['kbo.name'][cond])
     pyplot.plot(data['a'][cond], data['q'][cond], 'o', ms=5, alpha=0.5)
 
 def plot_axis():
@@ -29,7 +30,7 @@ def plot_features():
     pyplot.plot(a, q, 'k-.', alpha=0.5)
 
     a = [1000,1000]
-    q = [30,90]
+    q = [30,100]
     pyplot.plot(a, q, 'k-', alpha=0.5)
 
 if __name__ == '__main__':
